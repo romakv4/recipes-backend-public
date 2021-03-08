@@ -3,16 +3,9 @@ import {
   Get,
   Res,
   HttpStatus,
-  Param,
-  NotFoundException,
-  Post,
-  Body,
   Query,
-  Put,
-  Delete,
 } from '@nestjs/common';
 import { RecipesService } from './recipes.service';
-import { ValidateObjectId } from '../shared/pipes/validate-object-id.pipes';
 
 @Controller('recipes')
 export class RecipesController {
